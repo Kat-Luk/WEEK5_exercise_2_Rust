@@ -1,6 +1,6 @@
 #[macro_use] extern crate rocket;
 use rocket::response::content::RawHtml;
-#[get("/page/<page_name>")]
+#[get("/<page_name>")]
 
 fn render_page(page_name: String) -> RawHtml<&'static str> {
     let content = match page_name.as_str() {
