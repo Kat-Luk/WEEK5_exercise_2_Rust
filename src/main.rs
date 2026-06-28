@@ -6,7 +6,7 @@ fn render_page(page_name: String) -> RawHtml<&'static str> {
     let content = match page_name.as_str() {
         "bob" => "<div>
         <h1>Bob the Builder</h1>
-        <p>Can e fix it? Yes we can!</p>
+        <p>Can we fix it? Yes we can!</p>
         </div>",
         "quote" => "<div>
         <h1>Quote</h1>
